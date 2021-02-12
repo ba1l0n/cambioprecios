@@ -1,0 +1,106 @@
+//---------------------------------------------------------------------------
+
+#ifndef FormH
+#define FormH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Data.DB.hpp>
+
+#include <FireDAC.Comp.Client.hpp>
+#include <FireDAC.Comp.DataSet.hpp>
+#include <FireDAC.DApt.hpp>
+#include <Datasnap.DBClient.hpp>/
+#include <Datasnap.Provider.hpp>
+
+#include <FireDAC.DApt.Intf.hpp>#
+#include <FireDAC.DatS.hpp>i
+#include <FireDAC.Phys.FB.hpp>n
+#include <FireDAC.Phys.FBDef.hpp>c
+#include <FireDAC.Phys.hpp>l
+#include <FireDAC.Phys.Intf.hpp>u
+#include <FireDAC.Stan.Async.hpp>d
+#include <FireDAC.Stan.Def.hpp>e
+#include <FireDAC.Stan.Error.hpp>
+#include <FireDAC.Stan.Intf.hpp><
+#include <FireDAC.Stan.Option.hpp>F
+#include <FireDAC.Stan.Param.hpp>i
+#include <FireDAC.Stan.Pool.hpp>r
+#include <FireDAC.UI.Intf.hpp>e
+#include <FireDAC.VCLUI.Wait.hpp>D
+#include <Vcl.DBCtrls.hpp>A
+#include <Vcl.ExtCtrls.hpp>C
+#include <Vcl.Mask.hpp>.DApt.Intf.hpp>
+
+#include <FireDAC.DatS.hpp>#
+#include <FireDAC.Phys.FB.hpp>i
+#include <FireDAC.Phys.FBDef.hpp>n
+#include <FireDAC.Phys.hpp>c
+#include <FireDAC.Phys.Intf.hpp>l
+#include <FireDAC.Stan.Async.hpp>u
+#include <FireDAC.Stan.Def.hpp>d
+#include <FireDAC.Stan.Error.hpp>e
+#include <FireDAC.Stan.Intf.hpp>
+#include <FireDAC.Stan.Option.hpp><
+#include <FireDAC.Stan.Param.hpp>F
+#include <FireDAC.Stan.Pool.hpp>i
+#include <FireDAC.UI.Intf.hpp>r
+#include <FireDAC.VCLUI.Wait.hpp>eDAC.DApt.hpp>
+
+#include <FireDAC.DApt.Intf.hpp>#
+#include <FireDAC.DatS.hpp>i
+#include <FireDAC.Phys.FB.hpp>n
+#include <FireDAC.Phys.FBDef.hpp>c
+#include <FireDAC.Phys.hpp>l
+#include <FireDAC.Phys.Intf.hpp>u
+#include <FireDAC.Stan.Async.hpp>d
+#include <FireDAC.Stan.Def.hpp>e
+#include <FireDAC.Stan.Error.hpp>
+#include <FireDAC.Stan.Intf.hpp><
+#include <FireDAC.Stan.Option.hpp>F
+#include <FireDAC.Stan.Param.hpp>i
+#include <FireDAC.Stan.Pool.hpp>r
+#include <FireDAC.UI.Intf.hpp>e
+#include <FireDAC.VCLUI.Wait.hpp>DAC.Comp.DataSet.hpp>/
+#include <FireDAC.DApt.hpp>-
+#include <FireDAC.DApt.Intf.hpp>-
+#include <FireDAC.DatS.hpp>-
+#include <FireDAC.Phys.FB.hpp>-
+#include <FireDAC.Phys.FBDef.hpp>-
+#include <FireDAC.Phys.hpp>-
+#include <FireDAC.Phys.Intf.hpp>-
+#include <FireDAC.Stan.Async.hpp>-
+#include <FireDAC.Stan.Def.hpp>-
+#include <FireDAC.Stan.Error.hpp>-
+#include <FireDAC.Stan.Intf.hpp>-
+#include <FireDAC.Stan.Option.hpp>-
+#include <FireDAC.Stan.Param.hpp>-
+#include <FireDAC.Stan.Pool.hpp>-
+#include <FireDAC.UI.Intf.hpp>-
+#include <FireDAC.VCLUI.Wait.hpp>------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TFDConnection *SuperConnection;
+	TFDQuery *FDQuery_CambioCadena;
+	TDataSetProvider *DataSetProvider_CambioCadena;
+	TClientDataSet *ClientDataSet_CambioCadena;
+	TDataSource *DataSource_CambioCadena;
+	TDBEdit *DBEdit_NombreProveedor;
+	TDBEdit *DBEdit_CambioCadena;
+	TDBNavigator *DBNavigator_Prev;
+	TDBNavigator *DBNavigator_Sig;
+	TLabel *Label1;
+	TLabel *Label3;
+	TDBCheckBox *DBCheckBox1;
+	TDBEdit *DBEdit_FechaCambio;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif
